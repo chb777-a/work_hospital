@@ -50,7 +50,7 @@ public class PatientController {
     public boolean update(@RequestBody() PatientDto patientDto) {
         System.out.println("PatientController.update");
         System.out.println("patientDto = " + patientDto);
-        boolean result = patientService._update(patientDto);
+        boolean result = patientService.update(patientDto);
         return result;
     }
 
